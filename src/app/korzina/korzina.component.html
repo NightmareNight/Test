@@ -1,0 +1,15 @@
+<h2>Моя корзина</h2>
+<br>
+<small>Добавленные товары</small>
+
+<div *ngFor="let product of Products">
+Название:
+{{product.name}} 
+<br>
+Цена:
+{{product.price}}
+<br>
+Количество:
+{{product.val}}
+<button (click)="Delete()">Удалить</button>
+</div>

@@ -1,0 +1,25 @@
+<h2>Список продуктов</h2>
+
+    
+     <ul> <div  *ngFor="let product of Products">
+    <li>Название: <strong>{{product.name}} </strong></li> 
+    Цена: <strong>{{product.price}} р </strong>
+    <br>
+    Количество: <strong>{{product.val}}</strong>
+    <br>
+    <button (click)="AddKorzina(product.name, product.price)">Добавить в корзину</button>
+    <button (click)="Delete()">Удалить</button>
+</div>
+</ul>
+
+
+<input [(ngModel)]="ProductName" placeholder="Название продукта">
+<br>
+<input [(ngModel)]="ProductPrice" placeholder="Цена продукта" type="number">
+<br>
+<button (click)="AddProduct()">Добавить продукт</button>
+
+
+
+
+
